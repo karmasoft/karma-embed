@@ -1,0 +1,36 @@
+#container, .schedule {
+  min-height: 200px; }
+
+#container {
+  margin-top: 200px; }
+
+#header {
+  background-color: yellow;
+  padding: 60px 40px 40px 40px;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  height: 90px;
+  left: 0;
+  right: 0; }
+
+.navigation {
+  top: 150px; }
+
+.fullscreen-schedule, .fullscreen-workshops {
+  position: absolute;
+  top: 194px;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.schedule-container {
+  width: 100%;
+  position: relative;
+  overflow: auto; }
+
+.workshops-container, .instructors-container {
+  padding: 5px; }
