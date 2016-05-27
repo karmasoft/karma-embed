@@ -69,5 +69,5 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 
-  activate :asset_hash, :ignore => [/images/]
+  # activate :asset_hash, :ignore => [/images/]
 end
