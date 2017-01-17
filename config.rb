@@ -47,6 +47,13 @@
 #   end
 # end
 
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket                     = 'karmasoft2-embed' # The name of the S3 bucket you are targetting. This is globally unique.
+  s3_sync.region                     = 'us-east-1'     # The AWS region for your bucket.
+  s3_sync.aws_access_key_id          = ENV['KS_AWS_KEY']
+  s3_sync.aws_secret_access_key      = ENV['KS_AWS_SECRET']
+end
+
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
