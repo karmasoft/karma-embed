@@ -16,8 +16,7 @@ html, body {
   overflow: auto; }
 
 #container1 {
-  width: 45%;
-  float: left;
+  width: 100%;
   border-right: 1px solid #ccc; }
 
 #container2 {
