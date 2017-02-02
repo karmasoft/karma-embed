@@ -17,15 +17,9 @@
 
   %body.padded
     #header Header
-    #iframes
-      / #container1.ksiframe-container{"data-module" => "schedule", "data-target" => "demo.karmasoftonline.com",
-      /  "data-options" => "hide_branch=true"}
-      #container1.ksiframe-container{"data-module" => "users/profiles", "data-target" => "demo.karmasoftonline.com", "data-options" => "light=true"}
-
-      / #container2.ksiframe-container{"data-module" => "schedule", "data-target" => "demo.karmasoftonline.com"}
-
-      / #container1.ksiframe-container{"data-module" => "member/workshops", "data-target" => "demo.karmasoftonline.com"}
-      / #container{"data-module" => "users/profiles", "data-target" => "demo.karmasoftonline.com"}
+    #container
     #footer Footer
 
-    = javascript_include_tag 'http://demo.karmasoftonline.com/assets/iframeapi.js'
+    = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"
+    = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+    = javascript_include_tag "application"
