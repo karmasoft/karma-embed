@@ -5,6 +5,7 @@
     %title Embedded Examples
     = stylesheet_link_tag '//stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css'
     = stylesheet_link_tag 'application'
+
   %body
     %nav.navbar.navbar-expand-lg.navbar-light.bg-light
       %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
@@ -25,8 +26,15 @@
               %a.dropdown-item{:href => "#"} Another action
               .dropdown-divider
               %a.dropdown-item{:href => "#"} Something else here
-    %section
-      #container1.ksiframe-container{"data-module" => "schedule", "data-options" => "hide_branch=true&clean=true", "data-target" => "demo.karmasoftonline.com"}
+        .form-check
+          %input#defaultCheck1.form-check-input{:type => "checkbox", :value => ""}/
+          %label.form-check-label{:for => "defaultCheck1"}
+            Default checkbox
+    %section#test-window
+      .iphone
+      #container.ksiframe-container{"data-module" => "schedule", "data-options" => "hide_branch=true&clean=true", "data-target" => "demo.karmasoftonline.com"}
+
     = javascript_include_tag '//code.jquery.com/jquery-3.3.1.slim.min.js'
     = javascript_include_tag '//stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js'
     = javascript_include_tag '//demo.karmasoftonline.com/assets/iframeapi.js'
+    = javascript_include_tag 'application'
