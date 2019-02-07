@@ -28,10 +28,11 @@
             |
             %a{:href => "/store-default.html"} Default
           -#%a.dropdown-item{:href => "/offers.html"} Offers
-      %li.nav-menu
-        .form-check.nav-link
-          %input#mobileCheck.form-check-input{:type => "checkbox", :value => ""}/
-          %label.form-check-label{:for => "mobileCheck"}
-            Iphone view
+      - unless current_page.path == 'json.html'
+        %li.nav-menu
+          .form-check.nav-link
+            %input#mobileCheck.form-check-input{:type => "checkbox", :value => ""}/
+            %label.form-check-label{:for => "mobileCheck"}
+              Iphone view
       %li.nav-item
         %a.nav-link{:href => "/json.html"} JSON
