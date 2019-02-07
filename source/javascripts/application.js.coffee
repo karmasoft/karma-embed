@@ -1,6 +1,6 @@
 $(document).ready ->
-  $('#defaultCheck1').change ->
-    if $('#defaultCheck1').is ':checked'
+  $('#mobileCheck').change ->
+    if $('#mobileCheck').is ':checked'
       $('.iphone').css('display', 'block')
       $('#container').addClass('change-screen')
     else
