@@ -1,29 +1,32 @@
 !!!
-%html{:lang => "en"}
+%html{lang: 'en'}
   %head
-    %meta(http-equiv="content-type" content="text/html" charset="utf-8")
-    %meta(http-equiv="x-ua-compatible" content="ie=edge,chrome=1")
-    -# Standard viewport tag to set the viewport to the device's width,
-    -# Android 2.3 devices need this so 100% width works properly and
-    -# doesn't allow children to blow up the viewport width
-    %meta{:content => "initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width", :name => "viewport"}
-    -# Fix for iPhone 5 fullscreen web apps
-    %meta(name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)")
-
-    %title Embedded Schedule
-    = stylesheet_link_tag '//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600'
-    = stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'
-    = stylesheet_link_tag '//demo.karmasoftonline.com/assets/api.css'
-    = stylesheet_link_tag '//demo.karmasoftonline.com/styles.css'
-
+    %meta{charset: 'UTF-8'}
+    %title Embedded Examples
+    = stylesheet_link_tag '//stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css'
     = stylesheet_link_tag 'application'
-
-  %body.padded
-    #header Header
-    #container{"data-module" => "schedule", "data-target" => "demo.karmasoftonline.com", "data-options" => "hide_branch=true"}
-    / #container{"data-module" => "member/workshops", "data-target" => "demo.karmasoftonline.com", "data-options" => "hide_branch=true"}
-    / #container{"data-module" => "users/profiles", "data-target" => "demo.karmasoftonline.com"}
-    / #footer Footer
-
-    = javascript_include_tag '//demo.karmasoftonline.com/assets/api.js'
-
+  %body
+    %nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+        %span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        %ul.navbar-nav.mr-auto
+          %li.nav-item.active
+            %a.nav-link{:href => "#"}
+              Home
+              %span.sr-only (current)
+          %li.nav-item
+            %a.nav-link{:href => "#"} Link
+          %li.nav-item.dropdown
+            %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+              Json test
+            .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+              %a.dropdown-item{:href => "#"} Action
+              %a.dropdown-item{:href => "#"} Another action
+              .dropdown-divider
+              %a.dropdown-item{:href => "#"} Something else here
+    %section
+      #container1.ksiframe-container{"data-module" => "schedule", "data-options" => "hide_branch=true&clean=true", "data-target" => "demo.karmasoftonline.com"}
+    = javascript_include_tag '//code.jquery.com/jquery-3.3.1.slim.min.js'
+    = javascript_include_tag '//stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js'
+    = javascript_include_tag '//demo.karmasoftonline.com/assets/iframeapi.js'
