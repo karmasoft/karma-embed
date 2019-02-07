@@ -1,0 +1,29 @@
+#container
+  %h3
+    %span.badge.badge-info Also check browser dev kit
+  %table.table
+    %thead
+      %tr
+        %th{scope: 'col'}JSON Params Example
+        %th Result
+    %tbody
+      %tr
+        %th{scope: 'row'}
+          Schedule:
+          %span dates.day_name / wday / long
+        %td#schedule
+      %tr
+        %th{scope: 'row'}
+          Workshops:
+          %span [0].name / start_date / timetable
+        %td#workshops
+      %tr
+        %th{scope: 'row'}
+          Instructors:
+          %span [0].name / schedule_url
+        %td#instructors
+      %tr
+        %th{scope: 'row'}
+          Store:
+          %span [0].name / tax / type
+        %td#store

@@ -1,23 +1,36 @@
-%nav.navbar.navbar-expand-lg.navbar-light.bg-light
+%nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top
   %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
     %span.navbar-toggler-icon
   #navbarSupportedContent.collapse.navbar-collapse
     %ul.navbar-nav.mr-auto
-      %li.nav-item.active
-        %a.nav-link{:href => "#"}
-          Home
-          %span.sr-only (current)
-      %li.nav-item
-        %a.nav-link{:href => "#"} Link
       %li.nav-item.dropdown
-        %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-          Json test
-        .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
-          %a.dropdown-item{:href => "#"} Action
-          %a.dropdown-item{:href => "#"} Another action
-          .dropdown-divider
-          %a.dropdown-item{:href => "#"} Something else here
-    .form-check
-      %input#mobileCheck.form-check-input{:type => "checkbox", :value => ""}/
-      %label.form-check-label{:for => "mobileCheck"}
-        Iphone view
+        %a#embedded.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+          Embedded elements
+        .dropdown-menu{"aria-labelledby" => "embedded"}
+          .dropdown-item
+            Schedule:
+            %a{:href => "/"} Clean
+            |
+            %a{:href => "/schedule-default.html"} Default
+          .dropdown-item
+            Workshops:
+            %a{:href => "/workshops.html"} Clean
+            |
+            %a{:href => "/workshops-default.html"} Default
+          .dropdown-item
+            Instructors:
+            %a{:href => "/instructors.html"} Clean
+            |
+            %a{:href => "/instructors-default.html"} Default
+          .dropdown-item
+            Store:
+            %a{:href => "/store.html"} Clean
+            |
+            %a{:href => "/store-default.html"} Default
+      %li.nav-menu
+        .form-check.nav-link
+          %input#mobileCheck.form-check-input{:type => "checkbox", :value => ""}/
+          %label.form-check-label{:for => "mobileCheck"}
+            Iphone view
+      %li.nav-item
+        %a.nav-link{:href => "/json.html"} JSON
