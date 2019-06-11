@@ -23,5 +23,10 @@
     -#= javascript_include_tag '//demo.karmasoftonline.com/assets/offers.js'
     = javascript_include_tag 'application'
 
+    - if current_page.path == 'rails5.html'
+      = javascript_include_tag '//qa.karmasoftonline.com/assets/iframeapi.js'
+    - else
+      = javascript_include_tag '//demo.karmasoftonline.com/assets/iframeapi.js'
+
     - if current_page.path == 'json.html'
       = javascript_include_tag 'json'
