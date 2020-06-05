@@ -46,6 +46,7 @@
 #     "Helping"
 #   end
 # end
+#
 
 activate :s3_sync do |s3_sync|
   s3_sync.bucket                     = 'karmasoft2-embed' # The name of the S3 bucket you are targetting. This is globally unique.
@@ -57,7 +58,7 @@ end
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
-
+set :demo_site, 'qa1.karmasoftonline.com'
 
 # Build-specific configuration
 configure :build do
