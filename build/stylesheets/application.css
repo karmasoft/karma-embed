@@ -1,0 +1,55 @@
+#test-window {
+  position: relative;
+  margin-top: 65px; }
+
+.change-screen {
+  transform: scale(0.7);
+  width: 375px;
+  margin-left: 57px;
+  height: 668px;
+  overflow-y: auto;
+  position: absolute;
+  top: 6px;
+  left: calc(50% - 244.5px); }
+
+.iphone {
+  transform: scale(0.7);
+  display: none;
+  background-image: url(../images/iphone-8.png?1593104830);
+  background-repeat: no-repeat;
+  overflow-y: auto;
+  height: 910px;
+  background-size: cover;
+  width: 493px;
+  position: absolute;
+  top: -125px;
+  left: calc(50% - 244.5px); }
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent; }
+
+th span {
+  font-weight: 100;
+  color: #1b942c; }
+
+.form-check.nav-link {
+  margin-left: 25px; }
+  .form-check.nav-link input, .form-check.nav-link label {
+    cursor: pointer; }
+
+nav {
+  background: #ecf5ff; }
+
+footer {
+  height: 100px;
+  background: #ecf5ff;
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 100; }
+
+h3 .badge {
+  margin-top: 15px; }

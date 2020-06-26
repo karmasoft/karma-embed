@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>Embedded Examples</title>
+<link href="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" />
+<link href="stylesheets/application.css?1593104831" rel="stylesheet" />
+</head>
+<body>
+<nav class='navbar navbar-expand-lg navbar-light fixed-top'>
+<button aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation' class='navbar-toggler' data-target='#navbarSupportedContent' data-toggle='collapse' type='button'>
+<span class='navbar-toggler-icon'></span>
+</button>
+<div class='collapse navbar-collapse' id='navbarSupportedContent'>
+<ul class='navbar-nav mr-auto'>
+<li class='nav-item dropdown'>
+<a aria-expanded='false' aria-haspopup='true' class='nav-link dropdown-toggle' data-toggle='dropdown' href='#' id='embedded' role='button'>
+Embedded elements
+</a>
+<div aria-labelledby='embedded' class='dropdown-menu'>
+<a class='dropdown-item' href='/'>Schedule</a>
+<a class='dropdown-item' href='/workshops.html'>Workshops</a>
+<a class='dropdown-item' href='/instructors.html'>Instructors</a>
+<a class='dropdown-item' href='/store.html'>Store</a>
+<a class='dropdown-item' href='/offers.html'>Offers</a>
+</div>
+</li>
+<li class='nav-menu'>
+<div class='form-check nav-link'>
+<input class='form-check-input' id='mobileCheck' type='checkbox' value=''>
+<label class='form-check-label' for='mobileCheck'>
+Iphone view
+</label>
+</div>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='/json.html'>JSON</a>
+</li>
+</ul>
+</div>
+</nav>
+
+<div class='container-fluid'>
+<div class='row'>
+<div class='col-md-12'>
+<section id='test-window'>
+<div class='iphone'></div>
+<div class='ksiframe-container' data-module='member/store' data-options='clean=true' data-target='https://qa1.karmasoftonline.com' id='container'></div>
+
+</section>
+</div>
+</div>
+</div>
+<footer>
+<span>Footer</span>
+</footer>
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://qa1.karmasoftonline.com/assets/iframeapi.js"></script>
+<script src="javascripts/application.js?1593104831"></script>
+</body>
+</html>
