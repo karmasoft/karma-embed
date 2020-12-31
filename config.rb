@@ -58,7 +58,7 @@ end
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
-set :demo_site, 'https://qa1.karmasoft.io'
+set :demo_site, 'https://demo.karmasoft.io'
 # set :demo_site, 'http://test.localtest.me:3000'
 
 # Build-specific configuration
