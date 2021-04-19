@@ -22,7 +22,7 @@ $(function() {
         instructors = "<td>" + data[0].name + " / " + data[0].schedule_url + "</td>";
         return $('#instructors').replaceWith(instructors);
     });
-    return $.getJSON("https://demo.karmasoft.io"  + "/member/store.json", function(data) {
+    $.getJSON("https://demo.karmasoft.io"  + "/member/store.json", function(data) {
         var store;
         console.log('%c Store: ', console_style);
         console.log(data);
